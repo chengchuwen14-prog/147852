@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+
+<html lang="zh-Hant"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>LUXE EDIT | 所有商品</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;600;700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "inverse-on-surface": "#f1f1f1",
+                    "on-secondary-container": "#785e42",
+                    "on-tertiary-container": "#9a9b9b",
+                    "on-secondary-fixed": "#2a1803",
+                    "tertiary-container": "#313334",
+                    "surface-container": "#eeeeee",
+                    "on-tertiary-fixed": "#1a1c1c",
+                    "on-primary-fixed-variant": "#474747",
+                    "on-secondary-fixed-variant": "#5a4228",
+                    "error-container": "#ffdad6",
+                    "surface-tint": "#5f5e5e",
+                    "on-secondary": "#ffffff",
+                    "secondary-fixed-dim": "#e3c09f",
+                    "on-primary-fixed": "#1b1c1c",
+                    "surface-variant": "#e2e2e2",
+                    "surface-container-lowest": "#ffffff",
+                    "secondary-container": "#fdd9b6",
+                    "primary": "#1e1e1e",
+                    "on-background": "#1a1c1c",
+                    "surface-container-high": "#e8e8e8",
+                    "outline-variant": "#c4c7c7",
+                    "on-surface": "#1a1c1c",
+                    "tertiary": "#1c1e1f",
+                    "primary-container": "#333333",
+                    "surface": "#f9f9f9",
+                    "on-error-container": "#93000a",
+                    "surface-container-low": "#f3f3f3",
+                    "surface-container-highest": "#e2e2e2",
+                    "surface-dim": "#dadada",
+                    "secondary-fixed": "#ffdcbb",
+                    "primary-fixed": "#e4e2e1",
+                    "on-surface-variant": "#444748",
+                    "on-primary": "#ffffff",
+                    "inverse-primary": "#c8c6c6",
+                    "on-primary-container": "#9c9b9b",
+                    "secondary": "#74593e",
+                    "primary-fixed-dim": "#c8c6c6",
+                    "tertiary-fixed-dim": "#c6c6c6",
+                    "on-tertiary": "#ffffff",
+                    "error": "#ba1a1a",
+                    "inverse-surface": "#2f3131",
+                    "outline": "#747878",
+                    "tertiary-fixed": "#e2e2e2",
+                    "on-error": "#ffffff",
+                    "surface-bright": "#f9f9f9",
+                    "background": "#f9f9f9",
+                    "on-tertiary-fixed-variant": "#454747"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "stack-xl": "80px",
+                    "stack-xs": "8px",
+                    "margin-mobile": "16px",
+                    "gutter": "24px",
+                    "stack-md": "24px",
+                    "margin-desktop": "64px",
+                    "container-max": "1440px",
+                    "unit": "4px"
+            },
+            "fontFamily": {
+                    "label-sm": ["Inter"],
+                    "headline-md": ["Epilogue"],
+                    "display-lg": ["Epilogue"],
+                    "body-md": ["Inter"],
+                    "display-xl": ["Epilogue"],
+                    "body-lg": ["Inter"],
+                    "label-md": ["Inter"],
+                    "headline-sm": ["Epilogue"]
+            },
+            "fontSize": {
+                    "label-sm": ["12px", {"lineHeight": "1.2", "letterSpacing": "0.08em", "fontWeight": "600"}],
+                    "headline-md": ["32px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                    "display-lg": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "display-xl": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "label-md": ["14px", {"lineHeight": "1.4", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                    "headline-sm": ["24px", {"lineHeight": "1.3", "fontWeight": "500"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .product-card:hover .quick-buy {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md">
+<!-- Top Navigation Bar -->
+<header class="bg-surface sticky top-0 z-50 border-b border-outline-variant">
+<nav class="flex justify-between items-center w-full px-margin-desktop py-stack-xs max-w-container-max mx-auto">
+<div class="flex items-center gap-gutter">
+<a class="text-headline-md font-headline-md font-bold tracking-tighter text-primary" href="index.html">LUXE EDIT</a>
+<div class="hidden md:flex items-center gap-8 ml-8">
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" href="#">新品上市</a>
+<a class="font-label-md text-label-md text-primary font-bold border-b-2 border-primary pb-1" href="#">服飾系列</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" href="#">配件</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" href="#">精選品牌</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" href="#">關於我們</a>
+</div>
+</div>
+<div class="flex items-center gap-6">
+<button class="hover:opacity-70 transition-opacity"><span class="material-symbols-outlined" data-icon="search">search</span></button>
+<button class="hover:opacity-70 transition-opacity"><span class="material-symbols-outlined" data-icon="shopping_bag">shopping_bag</span></button>
+<button class="hover:opacity-70 transition-opacity"><span class="material-symbols-outlined" data-icon="person">person</span></button>
+</div>
+</nav>
+</header>
+<main class="max-w-container-max mx-auto px-margin-desktop py-12">
+<!-- Breadcrumbs & Title -->
+<nav class="mb-8">
+<ol class="flex text-label-sm font-label-sm text-on-surface-variant uppercase tracking-widest">
+<li><a class="hover:text-primary" href="index.html">首頁</a></li>
+<li class="mx-2">/</li>
+<li class="text-primary">所有商品</li>
+</ol>
+<h1 class="font-display-lg text-display-lg mt-4 mb-12">所有商品</h1>
+</nav>
+<div class="flex flex-col lg:flex-row gap-gutter">
+<!-- Sidebar Filters -->
+<aside class="w-full lg:w-64 flex-shrink-0">
+<div class="sticky top-24 space-y-10">
+<!-- Category -->
+<div>
+<h3 class="font-label-md text-label-md uppercase mb-4 border-b border-outline-variant pb-2">分類</h3>
+<ul class="space-y-3">
+<li><a class="text-body-md hover:text-primary flex justify-between" href="#">大衣與外套 <span class="text-on-surface-variant text-sm">24</span></a></li>
+<li><a class="text-body-md hover:text-primary flex justify-between" href="#">上衣與襯衫 <span class="text-on-surface-variant text-sm">48</span></a></li>
+<li><a class="text-body-md hover:text-primary flex justify-between" href="#">洋裝 <span class="text-on-surface-variant text-sm">18</span></a></li>
+<li><a class="text-body-md hover:text-primary flex justify-between" href="#">褲裝 <span class="text-on-surface-variant text-sm">32</span></a></li>
+<li><a class="text-body-md hover:text-primary flex justify-between" href="#">針織系列 <span class="text-on-surface-variant text-sm">15</span></a></li>
+</ul>
+</div>
+<!-- Size -->
+<div>
+<h3 class="font-label-md text-label-md uppercase mb-4 border-b border-outline-variant pb-2">尺寸</h3>
+<div class="grid grid-cols-4 gap-2">
+<button class="h-10 border border-outline-variant flex items-center justify-center hover:border-primary text-label-sm">XS</button>
+<button class="h-10 border border-primary bg-primary text-on-primary flex items-center justify-center text-label-sm">S</button>
+<button class="h-10 border border-outline-variant flex items-center justify-center hover:border-primary text-label-sm">M</button>
+<button class="h-10 border border-outline-variant flex items-center justify-center hover:border-primary text-label-sm">L</button>
+</div>
+</div>
+<!-- Color Swatches -->
+<div>
+<h3 class="font-label-md text-label-md uppercase mb-4 border-b border-outline-variant pb-2">顏色</h3>
+<div class="flex flex-wrap gap-3">
+<button class="w-6 h-6 rounded-full bg-primary ring-1 ring-offset-2 ring-primary"></button>
+<button class="w-6 h-6 rounded-full bg-white border border-outline-variant"></button>
+<button class="w-6 h-6 rounded-full bg-[#E5E5E5] border border-outline-variant"></button>
+<button class="w-6 h-6 rounded-full bg-[#A39171] border border-outline-variant"></button>
+<button class="w-6 h-6 rounded-full bg-[#2C3E50] border border-outline-variant"></button>
+<button class="w-6 h-6 rounded-full bg-[#4A3728] border border-outline-variant"></button>
+</div>
+</div>
+<!-- Price Range -->
+<div>
+<h3 class="font-label-md text-label-md uppercase mb-4 border-b border-outline-variant pb-2">價格區間</h3>
+<div class="space-y-4">
+<input class="w-full accent-primary" max="50000" min="0" type="range"/>
+<div class="flex justify-between text-label-sm">
+<span>NT$ 0</span>
+<span>NT$ 50,000+</span>
+</div>
+</div>
+</div>
+</div>
+</aside>
+<!-- Product Listing -->
+<section class="flex-grow">
+<!-- Sort & View Controls -->
+<div class="flex justify-between items-center mb-8 pb-4 border-b border-outline-variant">
+<p class="text-body-md text-on-surface-variant">顯示 12 項商品中的 12 項</p>
+<div class="flex items-center gap-4">
+<span class="text-label-sm font-label-sm uppercase">排序方式</span>
+<select class="bg-transparent border-none focus:ring-0 text-label-md cursor-pointer font-bold">
+<option>最新上架</option>
+<option>價格由高到低</option>
+<option>價格由低到高</option>
+<option>熱銷商品</option>
+</select>
+</div>
+</div>
+<!-- Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-x-gutter gap-y-12">
+<!-- Product Item 1 -->
+<a href="detail.html" class="product-card group relative block">
+<div class="relative aspect-[4/5] overflow-hidden mb-4">
+<img alt="Product" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A sophisticated woman modeling a minimalist long charcoal wool coat against a plain off-white studio background. The lighting is soft and high-fashion, emphasizing the clean lines and premium texture of the garment. The overall aesthetic is monochrome, luxury, and quiet authority." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDw1Fy9YTl_CHtYbVKOClMh1Tq0qJ0Et5oJBbwuv-nfT2OR29XCgazL1yNXkj9XuKLyZRfzqgCw56ecoxcC1sIAq5AID5rnsWQkmr-fzFM3unze_hDzd2PAG_qk-qcP19S0mWONbYYr085Ej-XYrglx-kqlAXdUzAkgyBjBleob-AXAhorW1-hlExqe1p6yj3O9DCqEbx8fZsyg-lh3qH1YoDVaCL3XLRJK1jUcZjb_xQkzU3dtvw_8-XJp-BGGT803qzDgcpQDqG1e"/>
+<button class="quick-buy absolute bottom-0 left-0 right-0 bg-primary text-on-primary py-4 text-label-md font-bold opacity-0 translate-y-2 transition-all duration-300">快速選購</button>
+</div>
+<div>
+<h4 class="font-body-md text-body-md mb-1">極簡羊毛大衣</h4>
+<p class="font-label-md text-label-md font-bold mb-3">NT$ 18,800</p>
+<div class="flex gap-2">
+<span class="w-3 h-3 rounded-full bg-[#1e1e1e]"></span>
+<span class="w-3 h-3 rounded-full bg-[#A39171]"></span>
+</div>
+</div>
+</a>
+<!-- Product Item 2 -->
+<a href="detail.html" class="product-card group relative block">
+<div class="relative aspect-[4/5] overflow-hidden mb-4">
+<img alt="Product" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Close-up shot of a silk satin ivory blouse with a minimalist collar, draped elegantly over a mannequin in a sun-drenched, high-end boutique setting. Soft shadows play across the fabric, highlighting the luxurious sheen and fluid movement. The atmosphere is serene and expensive." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAR-8hZa8PxbgFSyUPM8GQU2QLbfQ6zSMu-LpJiUj3JayEFyRSJ0FIvhHYHjtVs_rT4W2dfP2bpGhZES9AilPu2b_8jOauKpuoGHxJfiNTAJEQaGnGdnccATv3mplcr0MQ2gMUd1pCxv0imF_QllvzUE0ECaO6R3nxUVvY3yYZn2HoXCN7kFMHnnF5LQVWUSqK29VpaK0dcWfnABan5_vMmEAPV2wtkHQvwoihMeEayYhwcHUsE_FgW7Kk34RTb7vPQmVIXcdKKJar8"/>
+<button class="quick-buy absolute bottom-0 left-0 right-0 bg-primary text-on-primary py-4 text-label-md font-bold opacity-0 translate-y-2 transition-all duration-300">快速選購</button>
+</div>
+<div>
+<h4 class="font-body-md text-body-md mb-1">絲滑綢面襯衫</h4>
+<p class="font-label-md text-label-md font-bold mb-3">NT$ 4,200</p>
+<div class="flex gap-2">
+<span class="w-3 h-3 rounded-full bg-[#ffffff] border border-outline-variant"></span>
+<span class="w-3 h-3 rounded-full bg-[#F5F5F5]"></span>
+</div>
+</div>
+</a>
+<!-- Product Item 3 -->
+<a href="detail.html" class="product-card group relative block">
+<div class="relative aspect-[4/5] overflow-hidden mb-4">
+<img alt="Product" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A tall model wearing high-waisted black tailored trousers and a simple white ribbed tank top, standing in a minimalist concrete architectural space. The lighting is harsh and direct, creating strong shadows that emphasize the sharp tailoring and modern silhouette. High-fashion editorial style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDsgctUi-KVlJeRBVvGCbXCe5flXTUxp1NSk8050ABJhlXJCmdmRwydD_IyM8HZPb70lySvKnzsNHX87jGUeYyk6ytXvMGjLhYM7kb3JyMRNfHxgainWCRzvJ8Vu_m2BNNSMADWbQaljfFZ41xzJ_KLhYQKxYOUCJnakI25VzcX0ofLoGAioE2Ell6-AW6VcI1Vn96hrVdFuanXSqFZHLZWsiTpu9RtHqvuHLRxOHCyEDbiPtvt_VyhNpzJIb-IcMawPqjPZb5sTe-b"/>
+<button class="quick-buy absolute bottom-0 left-0 right-0 bg-primary text-on-primary py-4 text-label-md font-bold opacity-0 translate-y-2 transition-all duration-300">快速選購</button>
+</div>
+<div>
+<h4 class="font-body-md text-body-md mb-1">直筒剪裁西裝褲</h4>
+<p class="font-label-md text-label-md font-bold mb-3">NT$ 3,800</p>
+<div class="flex gap-2">
+<span class="w-3 h-3 rounded-full bg-[#1e1e1e]"></span>
+</div>
+</div>
+</a>
+<!-- Product Item 4 -->
+<a href="detail.html" class="product-card group relative block">
+<div class="relative aspect-[4/5] overflow-hidden mb-4">
+<img alt="Product" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A oversized cream-colored cashmere sweater artfully draped over a white designer chair in a minimalist living room. The room features expansive whitespace and soft, warm ambient light that conveys a sense of quiet luxury and comfort. Minimalist monochrome palette." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB5Pp0XkId9-t-n1AwWlLTxqsShSdf3B4AHOMOB3dbXbm5ojYlGIQ9FVnclOW8mPLuwoHIUfR3Aa00GiaulEBc2NMsApzE3YQlZQRc6M0xDCcSia9SG7c3sXsdNfMVtpKekO7wMDOnARLA7qp6mZ4lGLTZ1jX3q_An6QeS89kLBi8_D6T91kG4jnrfaW1BwQ1iyI_yu-tI7_U7ha2e5aFxUT2ys-xmlHDmaGb-4Ke1uOujmNglC-lyhSHktY-7C41u2hGU0qy2exFqc"/>
+<button class="quick-buy absolute bottom-0 left-0 right-0 bg-primary text-on-primary py-4 text-label-md font-bold opacity-0 translate-y-2 transition-all duration-300">快速選購</button>
+</div>
+<div>
+<h4 class="font-body-md text-body-md mb-1">喀什米爾寬鬆毛衣</h4>
+<p class="font-label-md text-label-md font-bold mb-3">NT$ 12,500</p>
+<div class="flex gap-2">
+<span class="w-3 h-3 rounded-full bg-[#F3E5AB]"></span>
+<span class="w-3 h-3 rounded-full bg-[#E5E5E5]"></span>
+</div>
+</div>
+</a>
+<!-- Product Item 5 -->
+<a href="detail.html" class="product-card group relative block">
+<div class="relative aspect-[4/5] overflow-hidden mb-4">
+<img alt="Product" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A portrait of a model wearing a heavy-weight black cotton t-shirt with a structured silhouette. The lighting is dramatic, side-lit, highlighting the premium fabric texture and clean neckline. The background is a dark grey textured wall, creating a sophisticated urban aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBbOnoXkEIiwXq-0pBpM1-t3smj5Es87mgLmvC9A47_caqpDt0BXkh1I8sanYk0jUl4LmBOfjIZUqT_yyJyKitrifL9rlkobYdPO5H3sW932K8DKMio-3vK54RDe_Zo76ReXdq_yfsZU0BC0xa2dGAkpCpk5pWsJQRxIRmWIrAZXNobjr2sSUkBs-1yxE4A9S7Kjd4ZeWzAnl4cANhPoEb9VVYe3fJmZBjbb97A_RO8R-Z3C3-cO8zDgPlPug5Iaj-FrZ4vxWwkGySL"/>
+<button class="quick-buy absolute bottom-0 left-0 right-0 bg-primary text-on-primary py-4 text-label-md font-bold opacity-0 translate-y-2 transition-all duration-300">快速選購</button>
+</div>
+<div>
+<h4 class="font-body-md text-body-md mb-1">重磅棉質廓形T恤</h4>
+<p class="font-label-md text-label-md font-bold mb-3">NT$ 1,580</p>
+<div class="flex gap-2">
+<span class="w-3 h-3 rounded-full bg-[#1e1e1e]"></span>
+<span class="w-3 h-3 rounded-full bg-[#ffffff] border border-outline-variant"></span>
+</div>
+</div>
+</a>
+<!-- Product Item 6 -->
+<a href="detail.html" class="product-card group relative block">
+<div class="relative aspect-[4/5] overflow-hidden mb-4">
+<img alt="Product" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Close-up of a model wearing dark indigo slim-fit raw denim jeans, paired with minimalist black leather boots. The setting is an industrial gallery space with neutral tones. The lighting is sharp and clear, focusing on the quality of the stitching and denim grain." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDKBpaw2KlYHCcsJpvp_BcP3o-FOPqx5dV_8nLULJXGtGWjPHKDicyVQ3USM_83K-Y6Xs3a2AiUXp4KfQcXL0djww9nwIPVmnLmtthXzVxj0VOpx8JJAhrdYjbKX1WXa45Jfw6NqoWyIyf2RpmmJcvxSxgqYt-cFbafjukIOarFHLnXrGxH8lfea8YVekl-6po0YBIQq8bLOSFgfEG093qY8rFO-DWCnH2uaYwSRKPI5q7CPdUvehMRqVJqZdzo9Kus3l-yQnzmtOTM"/>
+<button class="quick-buy absolute bottom-0 left-0 right-0 bg-primary text-on-primary py-4 text-label-md font-bold opacity-0 translate-y-2 transition-all duration-300">快速選購</button>
+</div>
+<div>
+<h4 class="font-body-md text-body-md mb-1">原色合身丹寧褲</h4>
+<p class="font-label-md text-label-md font-bold mb-3">NT$ 4,500</p>
+<div class="flex gap-2">
+<span class="w-3 h-3 rounded-full bg-[#001f3f]"></span>
+</div>
+</div>
+</a>
+<!-- Repeat items for a full grid of 12 (simplified for brevity but maintains structure) -->
+<!-- Product Item 7 -->
+<a href="detail.html" class="product-card group relative block">
+<div class="relative aspect-[4/5] overflow-hidden mb-4 bg-[#F5F5F5]">
+<img alt="Product" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A minimalist architectural fashion shot featuring a light beige oversized trench coat. The model is positioned against a brutalist concrete wall under bright, diffused daylight. The clean lines of the coat create a striking geometric silhouette. Luxury fashion boutique style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBCiYPXFiZM5CrzJhTv0JgSAM_waySrtPq9msVM2Ftfgb4mkcyjNffpdXmOlz-Pr05FCNO4Xkf1nfuFEq_JNYS_ZcC2UKCGMLRT6aKs7bCPHQ-72MCcZZSAoSQ9Dlz_yap6axD0B9hyp8cAkM6YP-LObGpK-A4H5S2YTzNjciSuD3FWBSoEqDZ_C9E6YExrc21W0_Yl5tNS9uqwolgeEIlo66AHzHjC2d4m0x_C96OGAO98LCMfvP2iK2QolQhbZBDjO_i30wYumxvS"/>
+<button class="quick-buy absolute bottom-0 left-0 right-0 bg-primary text-on-primary py-4 text-label-md font-bold opacity-0 translate-y-2 transition-all duration-300">快速選購</button>
+</div>
+<div>
+<h4 class="font-body-md text-body-md mb-1">經典廓形風衣</h4>
+<p class="font-label-md text-label-md font-bold mb-3">NT$ 15,600</p>
+<div class="flex gap-2"><span class="w-3 h-3 rounded-full bg-[#D2B48C]"></span></div>
+</div>
+</a>
+<!-- Product Item 8 -->
+<a href="detail.html" class="product-card group relative block">
+<div class="relative aspect-[4/5] overflow-hidden mb-4">
+<img alt="Product" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A simple black slip dress made of heavy silk hanging on a minimalist brass rail in a stark white room. The shadows are soft and long, emphasizing the garment's elegance and the room's expansive whitespace. Modern minimalism at its finest." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA3hCeqWk-l0CNJCWkzn0sCby-TemMEHSVBVC4tBjvAaTd9X-Wi__LU_0sSDxDVHTe6anro9ae6_jdoGAKyqqSGVX7amsP5lQyKc_HYJS5Q7Yy8jDEKjVZrrWS6_Q7DJ-5v3cZPuQGVKHFbd7bbWfeJxMYgRVM6i8YDVfPJ-Xo51JDbAi7dkshXI7VU_6Cc-NwcpujpVamIKb0Xf95T5uL9TDpDEQ1svshyK-ztAN-c9OcXenMp-f3a6TgWbeIUICmj4y-y6cbkendC"/>
+<button class="quick-buy absolute bottom-0 left-0 right-0 bg-primary text-on-primary py-4 text-label-md font-bold opacity-0 translate-y-2 transition-all duration-300">快速選購</button>
+</div>
+<div>
+<h4 class="font-body-md text-body-md mb-1">真絲細肩帶連身裙</h4>
+<p class="font-label-md text-label-md font-bold mb-3">NT$ 6,800</p>
+<div class="flex gap-2"><span class="w-3 h-3 rounded-full bg-[#1e1e1e]"></span></div>
+</div>
+</a>
+<!-- Product Item 9 -->
+<a href="detail.html" class="product-card group relative block">
+<div class="relative aspect-[4/5] overflow-hidden mb-4">
+<img alt="Product" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A detailed shot of a charcoal grey textured blazer jacket paired with a white shirt. The fabric weave is clearly visible under clean, studio lighting. The setting is professional yet creative, reflecting high-end editorial standards." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDkcS7QSKDX6Gsc65YkJnkM1X07l4BQ_YehxK_4-e9MfkYB0YkKW7BgC9b1vAFeKPNnKauqKyD5mfeFKbbujqa70lB7aCN0buANQnVh76Xp3FKw0ZFB112r_1IAWxHqEYTYZqtYMhWH4PMb0j-EDhiPR8tmTNXTcmAY5ceoRDcWf-mOdnfLF1F0fsymqu-CBJiOIIAPBObctCPX_MS5gMY3XDQKydFUfo5mnlZhFZDkAbqe4eCTQFAPlFBdd9GtLG03tzh6h6QL_ny7"/>
+<button class="quick-buy absolute bottom-0 left-0 right-0 bg-primary text-on-primary py-4 text-label-md font-bold opacity-0 translate-y-2 transition-all duration-300">快速選購</button>
+</div>
+<div>
+<h4 class="font-body-md text-body-md mb-1">修身毛料西裝外套</h4>
+<p class="font-label-md text-label-md font-bold mb-3">NT$ 11,200</p>
+<div class="flex gap-2"><span class="w-3 h-3 rounded-full bg-[#333333]"></span></div>
+</div>
+</a>
+<!-- Product Item 10 -->
+<a href="detail.html" class="product-card group relative block">
+<div class="relative aspect-[4/5] overflow-hidden mb-4">
+<img alt="Product" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Model wearing a minimalist black leather biker jacket with silver hardware. Shot in a gritty yet clean urban environment with high-contrast monochrome lighting. The focus is on the premium leather grain and sharp silhouette." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBMqGMPQa78nJviKUfSN1pZ2cFf-2F98prNz3CJ43soGdAU7eg6Yi541ImTOUpr2pz3BkqAykcw3AcotS-jLOi3rgbIH-AIJGPELJ5ZRTJIXoUt7XfGbNIEebd0hJ8cPnttuIHkw1Ct8mJ4dl1kYgMRr6AS7aMbyluLOw9isTwh_F3vCQAZTnA-DYICibo0n-ftmOjVdJY2T6qGNv9kY16xyj-zSkZUWZ5rMS-K3VSonet74D2VweBFBqc1k5ZEfvkjPFc0sZ-6egGQ"/>
+<button class="quick-buy absolute bottom-0 left-0 right-0 bg-primary text-on-primary py-4 text-label-md font-bold opacity-0 translate-y-2 transition-all duration-300">快速選購</button>
+</div>
+<div>
+<h4 class="font-body-md text-body-md mb-1">頂級小羊皮皮衣</h4>
+<p class="font-label-md text-label-md font-bold mb-3">NT$ 24,800</p>
+<div class="flex gap-2"><span class="w-3 h-3 rounded-full bg-[#000000]"></span></div>
+</div>
+</a>
+<!-- Product Item 11 -->
+<a href="detail.html" class="product-card group relative block">
+<div class="relative aspect-[4/5] overflow-hidden mb-4">
+<img alt="Product" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Minimalist white crisp cotton button-down shirt tucked into tailored trousers. The lighting is bright and clean, emphasizing the structured collar and precise cuffs. High-fashion studio aesthetic with a monochrome foundation." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCDD-XwZh-JU1d_NM8ECdP0OIV1ghEUwv-ck7X5YIIUXuvO2XsX61Ftd9g2fSPKpOE9Wsfw-xjA71XpsgjBPYI4_Jac5kCT0lgfbvGNpJaZZWcj_8xiCk9oP2CwkVuqreJ41TJov9l92pRnt1_hrCOhECwGCFNVFp8_-MzhoFSEx8C31-LLhtsPVVzUZCaS23cG3RODT0wx4ZVZHnAUO9pQtXGsMpURogleS3R-Cg4RQLmtoiwXG90_LsMmY0LMiPGDRB_4kPTi0_xY"/>
+<button class="quick-buy absolute bottom-0 left-0 right-0 bg-primary text-on-primary py-4 text-label-md font-bold opacity-0 translate-y-2 transition-all duration-300">快速選購</button>
+</div>
+<div>
+<h4 class="font-body-md text-body-md mb-1">精梳棉修身襯衫</h4>
+<p class="font-label-md text-label-md font-bold mb-3">NT$ 3,200</p>
+<div class="flex gap-2"><span class="w-3 h-3 rounded-full bg-[#ffffff] border border-outline-variant"></span></div>
+</div>
+</a>
+<!-- Product Item 12 -->
+<a href="detail.html" class="product-card group relative block">
+<div class="relative aspect-[4/5] overflow-hidden mb-4">
+<img alt="Product" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Model wearing a soft grey cashmere scarf over a minimalist black coat. Soft daylight illuminates the scene in a quiet European street. The overall mood is cold yet cozy, highlighting the luxury accessories." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCrjEHmz3WM8uIhdxCTUPa8DNgYh4jGL3lT3Q_mri546wAT9y65IusenYpXnoAUCNRbFPk4rZ0F98AEaA1zHoY-_PwvQpLRlyWjDsGj63sHPNB4yleThgBwYlJRCtOgaQukjLB6Pd1jGIV9RHHdP7BH_XvHdlDfYv-ngUGV4BbyuUWuH0wMYxU8NFJKHRy0J5Zeoig-bGmA7J0aR-49DDFGNhqdMMtaPkxr-UfGQTEgHFmkjtIOdKx4ulNnvOqq2IOeiOdpxRAiPE2P"/>
+<button class="quick-buy absolute bottom-0 left-0 right-0 bg-primary text-on-primary py-4 text-label-md font-bold opacity-0 translate-y-2 transition-all duration-300">快速選購</button>
+</div>
+<div>
+<h4 class="font-body-md text-body-md mb-1">頂級喀什米爾圍巾</h4>
+<p class="font-label-md text-label-md font-bold mb-3">NT$ 5,800</p>
+<div class="flex gap-2"><span class="w-3 h-3 rounded-full bg-[#c0c0c0]"></span><span class="w-3 h-3 rounded-full bg-[#1e1e1e]"></span></div>
+</div>
+</a>
+</div>
+<!-- Pagination -->
+<div class="mt-20 flex justify-center items-center gap-4">
+<button class="w-10 h-10 flex items-center justify-center border border-outline-variant hover:border-primary transition-colors">
+<span class="material-symbols-outlined text-sm" data-icon="chevron_left">chevron_left</span>
+</button>
+<button class="w-10 h-10 flex items-center justify-center bg-primary text-on-primary font-bold">1</button>
+<button class="w-10 h-10 flex items-center justify-center border border-outline-variant hover:border-primary transition-colors">2</button>
+<button class="w-10 h-10 flex items-center justify-center border border-outline-variant hover:border-primary transition-colors">3</button>
+<span class="text-on-surface-variant">...</span>
+<button class="w-10 h-10 flex items-center justify-center border border-outline-variant hover:border-primary transition-colors">10</button>
+<button class="w-10 h-10 flex items-center justify-center border border-outline-variant hover:border-primary transition-colors">
+<span class="material-symbols-outlined text-sm" data-icon="chevron_right">chevron_right</span>
+</button>
+</div>
+</section>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-low border-t border-outline-variant">
+<div class="max-w-container-max mx-auto px-margin-desktop py-stack-xl flex flex-col md:flex-row justify-between items-start gap-12">
+<div class="max-w-sm">
+<h2 class="text-headline-sm font-headline-sm font-bold text-primary mb-6">LUXE EDIT</h2>
+<p class="text-body-md text-on-surface-variant mb-8">專注於現代極簡主義，為追求生活品質的您提供經得起時間考驗的高級時裝。我們的每一件商品都是設計與工藝的結晶。</p>
+<div class="flex gap-6">
+<a class="hover:opacity-70 transition-opacity" href="#"><span class="material-symbols-outlined">brand_awareness</span></a>
+<a class="hover:opacity-70 transition-opacity" href="#"><span class="material-symbols-outlined">camera</span></a>
+<a class="hover:opacity-70 transition-opacity" href="#"><span class="material-symbols-outlined">alternate_email</span></a>
+</div>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-3 gap-12">
+<div>
+<h4 class="font-label-md text-label-md uppercase mb-6">顧客服務</h4>
+<ul class="space-y-3">
+<li><a class="text-on-surface-variant hover:text-primary transition-colors text-body-md" href="#">聯絡我們</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors text-body-md" href="#">配送資訊</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors text-body-md" href="#">退換貨政策</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors text-body-md" href="#">常見問題</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label-md text-label-md uppercase mb-6">關於公司</h4>
+<ul class="space-y-3">
+<li><a class="text-on-surface-variant hover:text-primary transition-colors text-body-md" href="#">品牌故事</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors text-body-md" href="#">門市資訊</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors text-body-md" href="#">永續發展</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors text-body-md" href="#">工作機會</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label-md text-label-md uppercase mb-6">電子報</h4>
+<p class="text-on-surface-variant text-body-md mb-4">訂閱以獲取最新系列資訊與獨家優惠。</p>
+<div class="flex border-b border-primary py-2">
+<input class="bg-transparent border-none focus:ring-0 w-full text-body-md" placeholder="您的電子信箱" type="email"/>
+<button class="uppercase font-bold text-label-sm">訂閱</button>
+</div>
+</div>
+</div>
+</div>
+<div class="max-w-container-max mx-auto px-margin-desktop py-6 flex flex-col md:flex-row justify-between items-center gap-4 border-t border-outline-variant">
+<span class="text-label-sm text-on-surface-variant">© 2024 LUXE EDIT. 版權所有。</span>
+<div class="flex gap-8">
+<a class="text-label-sm text-on-surface-variant hover:text-primary" href="#">隱私政策</a>
+<a class="text-label-sm text-on-surface-variant hover:text-primary" href="#">服務條款</a>
+</div>
+</div>
+</footer>
+</body></html>

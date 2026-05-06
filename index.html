@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+
+<html lang="zh-Hant"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;600;700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-error": "#ffffff",
+                    "on-tertiary-fixed": "#1a1c1c",
+                    "on-surface": "#1a1c1c",
+                    "secondary-fixed": "#ffdcbb",
+                    "on-primary-fixed-variant": "#474747",
+                    "primary-fixed": "#e4e2e1",
+                    "on-tertiary": "#ffffff",
+                    "on-background": "#1a1c1c",
+                    "primary-fixed-dim": "#c8c6c6",
+                    "tertiary-fixed-dim": "#c6c6c6",
+                    "secondary-container": "#fdd9b6",
+                    "primary-container": "#333333",
+                    "tertiary": "#1c1e1f",
+                    "on-tertiary-fixed-variant": "#454747",
+                    "surface-bright": "#f9f9f9",
+                    "secondary-fixed-dim": "#e3c09f",
+                    "surface-container-high": "#e8e8e8",
+                    "on-secondary-fixed-variant": "#5a4228",
+                    "inverse-on-surface": "#f1f1f1",
+                    "on-secondary-fixed": "#2a1803",
+                    "background": "#f9f9f9",
+                    "on-surface-variant": "#444748",
+                    "surface": "#f9f9f9",
+                    "surface-container-highest": "#e2e2e2",
+                    "surface-container": "#eeeeee",
+                    "surface-variant": "#e2e2e2",
+                    "on-secondary-container": "#785e42",
+                    "surface-container-lowest": "#ffffff",
+                    "on-primary": "#ffffff",
+                    "secondary": "#74593e",
+                    "on-secondary": "#ffffff",
+                    "on-primary-container": "#9c9b9b",
+                    "tertiary-container": "#313334",
+                    "error-container": "#ffdad6",
+                    "error": "#ba1a1a",
+                    "on-error-container": "#93000a",
+                    "surface-container-low": "#f3f3f3",
+                    "inverse-primary": "#c8c6c6",
+                    "outline-variant": "#c4c7c7",
+                    "surface-tint": "#5f5e5e",
+                    "on-tertiary-container": "#9a9b9b",
+                    "on-primary-fixed": "#1b1c1c",
+                    "tertiary-fixed": "#e2e2e2",
+                    "outline": "#747878",
+                    "inverse-surface": "#2f3131",
+                    "primary": "#1e1e1e",
+                    "surface-dim": "#dadada"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0px",
+                    "lg": "0px",
+                    "xl": "0px",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "gutter": "24px",
+                    "unit": "4px",
+                    "margin-desktop": "64px",
+                    "margin-mobile": "16px",
+                    "container-max": "1440px",
+                    "stack-xs": "8px",
+                    "stack-md": "24px",
+                    "stack-xl": "80px"
+            },
+            "fontFamily": {
+                    "body-lg": ["Inter"],
+                    "headline-md": ["Epilogue"],
+                    "display-xl": ["Epilogue"],
+                    "display-lg": ["Epilogue"],
+                    "label-sm": ["Inter"],
+                    "body-md": ["Inter"],
+                    "headline-sm": ["Epilogue"],
+                    "label-md": ["Inter"]
+            },
+            "fontSize": {
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "headline-md": ["32px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                    "display-xl": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "display-lg": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                    "label-sm": ["12px", {"lineHeight": "1.2", "letterSpacing": "0.08em", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "headline-sm": ["24px", {"lineHeight": "1.3", "fontWeight": "500"}],
+                    "label-md": ["14px", {"lineHeight": "1.4", "letterSpacing": "0.05em", "fontWeight": "500"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body class="font-body-md text-on-surface selection:bg-secondary-fixed selection:text-on-secondary-fixed">
+<!-- TopAppBar -->
+<header class="bg-surface/90 dark:bg-surface-dim/90 backdrop-blur-md text-primary dark:text-primary-fixed docked full-width top-0 sticky z-50 border-b border-outline-variant/30">
+<div class="flex justify-between items-center w-full px-margin-desktop py-6 max-w-container-max mx-auto">
+<a href="index.html" class="font-display-lg text-display-lg tracking-tighter text-primary dark:text-primary-fixed cursor-pointer transition-all duration-500 ease-in-out hover:opacity-70">
+                MINIMAL
+            </a>
+<nav class="hidden md:flex items-center space-x-12">
+<a class="text-primary dark:text-primary-fixed font-bold border-b border-primary font-label-md text-label-md uppercase tracking-widest cursor-pointer transition-all duration-500 ease-in-out" href="list.html">Shop</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors duration-300 font-label-md text-label-md uppercase tracking-widest cursor-pointer transition-all duration-500 ease-in-out" href="#">New Arrivals</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors duration-300 font-label-md text-label-md uppercase tracking-widest cursor-pointer transition-all duration-500 ease-in-out" href="#">About</a>
+</nav>
+<div class="flex items-center space-x-6">
+<button class="material-symbols-outlined cursor-pointer transition-all duration-500 ease-in-out hover:opacity-70">search</button>
+<button class="material-symbols-outlined cursor-pointer transition-all duration-500 ease-in-out hover:opacity-70">shopping_bag</button>
+<button class="material-symbols-outlined cursor-pointer transition-all duration-500 ease-in-out hover:opacity-70">person</button>
+</div>
+</div>
+</header>
+<main>
+<!-- Section 1: Hero Section -->
+<section class="relative w-full h-[921px] overflow-hidden bg-surface-container-highest">
+<img class="w-full h-full object-cover grayscale-[0.2]" data-alt="A sophisticated fashion photography shot of a high-end model wearing a structured minimalist coat in a stark, modern architectural setting. The lighting is dramatic and cinematic, casting soft shadows across the neutral gray concrete walls. The color palette is strictly limited to deep blacks, charcoal grays, and crisp whites, echoing a premium boutique aesthetic. The mood is powerful, calm, and intentionally understated." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAqSyJ2FjHgZGOTBfSKAPKns18Kjc3jPuzAp224Sxfe9iJqaWpMxI5oGBGwd-2-QabRcuIAdUsDCL_KcYXx2COXoWrBlm98eGleH41yGEqlNmloidVp7PAXYJ9yygWPoe8vxriWqbpI_Hyw7TsBQWasZ1nJE5Zq1ckEHo4aVitwyXIogmhliCS8Im5XOhg8_KcpOobek-OXbEDokgkncDllYMO9jcmXY1rz4zaO7qFCE6O4ud7rAJWsjAnUWzFlA1oad51pCxWBxAyN"/>
+<div class="absolute inset-0 bg-black/10 flex flex-col items-center justify-center text-center px-4">
+<h1 class="text-white font-display-xl text-display-xl mb-stack-md">定義你的風格</h1>
+<a href="list.html" class="bg-primary text-white px-10 py-5 font-label-md text-label-md uppercase tracking-widest transition-all duration-300 hover:bg-on-surface-variant">
+                    立即選購
+                </a>
+</div>
+</section>
+<!-- Section 2: Featured Categories -->
+<section class="max-w-container-max mx-auto px-margin-desktop py-stack-xl">
+<div class="flex justify-between items-end mb-stack-md">
+<h2 class="font-headline-md text-headline-md text-primary">熱門分類</h2>
+<div class="h-[1px] flex-grow mx-gutter bg-outline-variant/30 mb-2"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Men -->
+<a href="list.html" class="group relative aspect-[4/5] overflow-hidden bg-surface-container cursor-pointer">
+<img class="w-full h-full object-cover grayscale transition-transform duration-700 group-hover:scale-105" data-alt="Close-up of high-quality men's tailored garments featuring premium wool textures and clean lines. The lighting is soft and directional, highlighting the fabric's superior quality in a minimalist studio environment. The aesthetic is focused on timeless modernism with a palette of deep navy and obsidian black. The atmosphere is refined and professional." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBPnDz1bWOet3Xs2a5MXIVI2NqeZA4uOpolKUvlWipDcxkiY8A7LatFZ-kyZgKXXZFytTjNhPIkziYTov7TQOsw8jLeXiHS5RGFi4pzxs_chGXMnurbpCbudsxmZrD1wIpcfbe18SomVoSV913FVC9wvETcqVKI9n-FI1O-I_t29uW4UCRgSvYuJLNkIll_z8vKdC561wPIlmhqYvDElgJt1WDPIXhMS3d-J1WxgGKIXvJ-gLk597BWAdLguSzMdQy-6NNfKIc4IXUS"/>
+<div class="absolute inset-0 bg-black/5 group-hover:bg-black/20 transition-colors duration-500"></div>
+<div class="absolute bottom-8 left-8">
+<span class="text-white font-display-lg text-display-lg">男裝</span>
+</div>
+</a>
+<!-- Women -->
+<a href="list.html" class="group relative aspect-[4/5] overflow-hidden bg-surface-container cursor-pointer">
+<img class="w-full h-full object-cover grayscale transition-transform duration-700 group-hover:scale-105" data-alt="An elegant woman dressed in a minimalist, fluid silk garment standing in a sun-drenched, high-ceilinged room. The lighting is bright and ethereal, creating a warm, modern light-mode feel. The palette emphasizes ivory, beige, and soft gold accents against a pure white background. The overall mood is one of quiet luxury and architectural clarity." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCId26_hHq0-M9UUWYNZri4j5ZsDpWbedx1RjVMPyECPezRwGyJzleUfQyEYocJ9ySxkLZfYepBdEmZQHgaMAK0AI9fUM-WsA886ySthakwnRRYELnpeei9UvDFVRqH9njkoTjOPWhkbki9Oi0qvWfMXi6-p6q0TE2gjjzkDWygXvFf7b4FvdF6yPTF2Pt4pcBgmNjh4SPDu6gZZex4ys3DWjYy6IYDCcEtFR_e4q_SmxRtG0EXTEPtV0Z3Yp0tq6py_2YBivE6qAx9"/>
+<div class="absolute inset-0 bg-black/5 group-hover:bg-black/20 transition-colors duration-500"></div>
+<div class="absolute bottom-8 left-8">
+<span class="text-white font-display-lg text-display-lg">女裝</span>
+</div>
+</a>
+<!-- Accessories -->
+<a href="list.html" class="group relative aspect-[4/5] overflow-hidden bg-surface-container cursor-pointer">
+<img class="w-full h-full object-cover grayscale transition-transform duration-700 group-hover:scale-105" data-alt="Minimalist luxury leather accessories arranged on a clean, geometric stone surface. The lighting is sharp and technical, emphasizing the craftsmanship and fine grain of the leather. The color palette is grounded in warm terracotta and rich black, creating a high-fashion editorial look. The scene is uncluttered and sophisticated." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDtxWGE7Ig_Er7yTjT0Ivc5v2h_qWzBm0PKZmbSAPRSxZQIUPmGYfi1Amvl0BTenvwX0jZLTU9swzz6XPcTG5r-aoXm7WdD6R0gLLFR4ukpAA4SDVT7hHgaZbCz5-TWBxBOPgpxT9_Jk3nJ9UpPOe5wW2nXKAnu4gI7-HnUXfZNTN47KtoF4YvoDUvGKfewxOMuhpY0OeYUWXRbTCoGecFnVWUXKTWAFF9G4sH5FTF7AI_0rBfdbCRKhAaeKoqP6r9Df7SWcpkgVI0p"/>
+<div class="absolute inset-0 bg-black/5 group-hover:bg-black/20 transition-colors duration-500"></div>
+<div class="absolute bottom-8 left-8">
+<span class="text-white font-display-lg text-display-lg">配飾</span>
+</div>
+</a>
+</div>
+</section>
+<!-- Section 3: Best Sellers -->
+<section class="bg-surface-container-low py-stack-xl">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="text-center mb-stack-xl">
+<h2 class="font-headline-md text-headline-md text-primary mb-stack-xs">熱銷商品</h2>
+<p class="text-on-surface-variant font-body-md">探索我們最受歡迎的永恆經典</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<!-- Product 1 -->
+<a href="detail.html" class="group flex flex-col">
+<div class="relative aspect-[4/5] overflow-hidden bg-white mb-6">
+<img class="w-full h-full object-cover grayscale transition-opacity duration-500 group-hover:opacity-80" data-alt="A premium black wool overcoat displayed against a minimalist white background. The image highlights the precise tailoring and structured silhouette of the garment. Soft ambient lighting creates subtle depth and professional clarity. The visual style is high-end boutique with a focus on quality over quantity." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDqbYfZyTmutvdGJM0DNKoOw5Zl8wMg_GVSV5wWbMbIaDy6H9NQy4nn8niU9ZCjCjMcN4wbeRzby468fqJ9UHtsDtNXfpwpcKve_JdZq1dbNTJ9XwnMb1X4cY2n2H_jmx7v38gm3N0ic90U4Mtk0EJg9mjFNNJs8y7g2iTGVPkJjU6RQOVuQzyPQQFunOttmSTcV9CZDJZPEKFx4nsFXZRpwMK5Oun4QBjr1QpPJ7FldjuYRIIRUKAp6ZzF8ezVwM83mC65j-r_MVJk"/>
+<div class="absolute inset-x-0 bottom-0 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+<button class="w-full bg-primary text-white py-4 font-label-sm text-label-sm uppercase tracking-widest">快速加入</button>
+</div>
+</div>
+<h3 class="font-body-lg text-body-lg text-primary">極簡羊毛大衣</h3>
+<p class="text-on-surface-variant font-label-md text-label-md">NT$ 8,800</p>
+</a>
+<!-- Product 2 -->
+<a href="detail.html" class="group flex flex-col">
+<div class="relative aspect-[4/5] overflow-hidden bg-white mb-6">
+<img class="w-full h-full object-cover grayscale transition-opacity duration-500 group-hover:opacity-80" data-alt="A silky satin shirt in a muted charcoal tone, elegantly draped to showcase the fabric's soft sheen. The lighting is diffused and flattering, creating a luxurious mood. The composition is clean and centered, emphasizing the garment's fluid cut. A sophisticated palette of gray and black dominates." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4vbHlYmgo0iXYwgdMP4Ju3OBeN1Y3-XuI6_hqGz6Mki8zyoKS0liuiwg3lOzcSxItToUk7Xpmv5spkB4a_YCnJsxkUCMrEUJdqUTrK5BzuLrPAtNTQvrO3Qu-OZntw-RsARgLmtrcBV7_ANszoGHEfZe5g6LP-7odvrAHbnNu0SRb36V51qRMKYUcxvJ4v_lcBlPQq8ZH6r3Iwdn1YsBef7j-iYOXeJ3Ymhe3iWFLDtX0_aLZvjpwuf0pi2DH294WVD09bs3zQjhd"/>
+<div class="absolute inset-x-0 bottom-0 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+<button class="w-full bg-primary text-white py-4 font-label-sm text-label-sm uppercase tracking-widest">快速加入</button>
+</div>
+</div>
+<h3 class="font-body-lg text-body-lg text-primary">絲滑緞面襯衫</h3>
+<p class="text-on-surface-variant font-label-md text-label-md">NT$ 3,200</p>
+</a>
+<!-- Product 3 -->
+<a href="detail.html" class="group flex flex-col">
+<div class="relative aspect-[4/5] overflow-hidden bg-white mb-6">
+<img class="w-full h-full object-cover grayscale transition-opacity duration-500 group-hover:opacity-80" data-alt="High-waisted tailored trousers in a premium beige fabric. The shot focuses on the clean lines and impeccable stitching. The background is a soft, textured off-white wall that provides a subtle contrast. The mood is serene and intentional, perfectly reflecting timeless modernism." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDk8e9LETR-1KTpk07Vis4b7IZXwQj4781_Ioh-1mVgIYmHMo_EaOQDIlkXolDDK8n-9o8JWRcqXyjVpU7-ttzcxs2XzHmEB7xcVeY7rct0nYZ6LsrJNcB7YAW8XG1BX2fw0jha7gdvwmfxn1LbWNzQNyoYi81XYUffTJ_UbgW1wwStwoerN8VYBEDXGG-rpHlz6w0hg0FXf3e8jRPmmrCChCBGleMvtn8AuoMZWTc05eQNzlYjduD_U_RKSNV3Ad-NUGD0oL34Sut2"/>
+<div class="absolute inset-x-0 bottom-0 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+<button class="w-full bg-primary text-white py-4 font-label-sm text-label-sm uppercase tracking-widest">快速加入</button>
+</div>
+</div>
+<h3 class="font-body-lg text-body-lg text-primary">合身修身西裝褲</h3>
+<p class="text-on-surface-variant font-label-md text-label-md">NT$ 4,500</p>
+</a>
+<!-- Product 4 -->
+<a href="detail.html" class="group flex flex-col">
+<div class="relative aspect-[4/5] overflow-hidden bg-white mb-6">
+<img class="w-full h-full object-cover grayscale transition-opacity duration-500 group-hover:opacity-80" data-alt="A fine-knit cashmere sweater in a deep espresso brown. The close-up photography emphasizes the soft texture and high-quality yarn. The lighting is warm and subtle, creating an inviting yet sophisticated feel. The background is a clean neutral, keeping the focus entirely on the garment's quality." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQbGUNf3UhWHAsbGLw9lvghmuR6ln5xEQ4i7jO0JQoK_VR8bvPhiuU9OLUVfq9tE8yT3gLA5zwtcPUX5duAQTbCoVhoUKYf1a_fF92AUL0CKUv5LTzZ4-gp7AwM9XYdlO3J3Gy-A-FQlZw2d0SKufvG9ZURFtyOrny1OBHorFrmpJKbD9CYWP6LJc6JNNQNpcw9Z6d9VDCxTOTk3nVPVzEQKId6apkA3mVmlbYsQUDJMKGZFkE-lOKsssGpUuWIjOOoFRXC9pyzI63"/>
+<div class="absolute inset-x-0 bottom-0 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+<button class="w-full bg-primary text-white py-4 font-label-sm text-label-sm uppercase tracking-widest">快速加入</button>
+</div>
+</div>
+<h3 class="font-body-lg text-body-lg text-primary">喀什米爾羊絨衫</h3>
+<p class="text-on-surface-variant font-label-md text-label-md">NT$ 5,900</p>
+</a>
+</div>
+</div>
+</section>
+<!-- Section 4: Brand Story -->
+<section class="max-w-container-max mx-auto px-margin-desktop py-stack-xl">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-stack-xl items-center">
+<div class="aspect-square bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover grayscale" data-alt="An artistic shot of a minimalist clothing workshop with neutral fabrics draped over clean wooden tables. The lighting is natural and soft, streaming in from large industrial windows. The space is uncluttered and serene, emphasizing a commitment to slow fashion and craftsmanship. The color palette is composed of oatmeal, charcoal, and warm wood tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAO71BF_TV-Foo_r6tvELI4WfKIJfCMT4RVaG8K8SyRAznYIqcAq-HPva6fG0ExEGYUv5hk4K6ivnYDEGnonr1NswOYVggTwmXBbcmvbjQgXRte6-JeZ76_-7CSAcLRAFeoI0gk5JRK5bCH23egGlEm35-xrLeyCVbU1TNN5PucBwmp5vELgZa9e-W6wBk66-mYgCIwN8BmnkDjwDF0jX1wnA3LGVcDEJEHhtn3N4qqHo1_whUURH2ixtl4PkjiKlu6jB1QiFs486yV"/>
+</div>
+<div class="flex flex-col space-y-stack-md lg:pl-stack-xl">
+<h2 class="font-display-lg text-display-lg text-primary">品牌理念</h2>
+<p class="font-body-lg text-body-lg text-on-surface leading-relaxed">
+                        我們相信，服裝不僅是外表的裝飾，更是生活態度的體現。堅持選用永續面料，打造永不過時的經典剪裁。每一件作品都經過深思熟慮，旨在為您的衣櫥帶來持久的價值與優雅。
+                    </p>
+<div class="flex items-center space-x-4 text-secondary">
+<span class="material-symbols-outlined">eco</span>
+<span class="font-label-md text-label-md uppercase tracking-widest">100% 永續面料</span>
+</div>
+<a class="inline-block border-b border-primary w-max pb-1 font-label-md text-label-md uppercase tracking-widest hover:text-on-surface-variant hover:border-on-surface-variant transition-colors" href="#">閱讀更多關於我們</a>
+</div>
+</div>
+</section>
+<!-- Section 5: Newsletter Section -->
+<section class="bg-primary text-white py-stack-xl px-margin-desktop">
+<div class="max-w-[800px] mx-auto text-center">
+<h2 class="font-headline-md text-headline-md mb-stack-md">訂閱電子報獲取最新資訊</h2>
+<p class="font-body-md opacity-70 mb-stack-xl">加入我們的清單，優先獲取新品發佈與獨家優惠資訊。</p>
+<form class="flex flex-col md:flex-row gap-4">
+<input class="flex-grow bg-transparent border-white/30 border-b p-4 focus:outline-none focus:border-white transition-colors text-white placeholder:text-white/40 font-body-md" placeholder="電子郵件地址" required="" type="email"/>
+<button class="bg-white text-primary px-10 py-4 font-label-sm text-label-sm uppercase tracking-widest transition-all hover:bg-secondary-fixed hover:text-on-secondary-fixed" type="submit">
+                        訂閱
+                    </button>
+</form>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest dark:bg-tertiary-container text-primary dark:text-primary-fixed w-full mt-stack-xl border-t border-outline-variant">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-desktop py-stack-xl max-w-container-max mx-auto">
+<div class="flex flex-col space-y-6">
+<div class="font-display-xl text-display-xl text-primary dark:text-primary-fixed">MINIMAL</div>
+<p class="font-body-md text-body-md text-on-surface-variant">追求極致簡約的生活美學。</p>
+</div>
+<div class="flex flex-col space-y-4">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary mb-2">Shop</span>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="#">男裝系列</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="#">女裝系列</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="#">精選配飾</a>
+</div>
+<div class="flex flex-col space-y-4">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary mb-2">Support</span>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="#">聯絡我們</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="#">常見問題</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="#">配送政策</a>
+</div>
+<div class="flex flex-col space-y-4">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary mb-2">Legal</span>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="#">隱私政策</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="#">服務條款</a>
+<p class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant mt-8">© 2024 MINIMAL. ALL RIGHTS RESERVED.</p>
+</div>
+</div>
+</footer>
+</body></html>

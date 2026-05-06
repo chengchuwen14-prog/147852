@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+
+<html class="light" lang="zh-Hant"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;600;700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-container-low": "#f3f3f3",
+                    "primary-fixed": "#e4e2e1",
+                    "tertiary": "#1c1e1f",
+                    "on-primary-fixed-variant": "#474747",
+                    "secondary-container": "#fdd9b6",
+                    "primary-container": "#333333",
+                    "outline": "#747878",
+                    "on-tertiary-fixed-variant": "#454747",
+                    "on-tertiary-container": "#9a9b9b",
+                    "on-secondary-container": "#785e42",
+                    "secondary-fixed-dim": "#e3c09f",
+                    "on-tertiary": "#ffffff",
+                    "inverse-primary": "#c8c6c6",
+                    "on-error-container": "#93000a",
+                    "background": "#f9f9f9",
+                    "primary": "#1e1e1e",
+                    "on-primary-container": "#9c9b9b",
+                    "on-primary": "#ffffff",
+                    "on-secondary-fixed-variant": "#5a4228",
+                    "tertiary-fixed-dim": "#c6c6c6",
+                    "on-tertiary-fixed": "#1a1c1c",
+                    "on-secondary-fixed": "#2a1803",
+                    "inverse-on-surface": "#f1f1f1",
+                    "surface-container-lowest": "#ffffff",
+                    "on-surface-variant": "#444748",
+                    "on-secondary": "#ffffff",
+                    "secondary-fixed": "#ffdcbb",
+                    "tertiary-container": "#313334",
+                    "surface-container": "#eeeeee",
+                    "primary-fixed-dim": "#c8c6c6",
+                    "surface-dim": "#dadada",
+                    "surface-container-highest": "#e2e2e2",
+                    "secondary": "#74593e",
+                    "surface-container-high": "#e8e8e8",
+                    "tertiary-fixed": "#e2e2e2",
+                    "outline-variant": "#c4c7c7",
+                    "surface": "#f9f9f9",
+                    "surface-bright": "#f9f9f9",
+                    "on-background": "#1a1c1c",
+                    "inverse-surface": "#2f3131",
+                    "error-container": "#ffdad6",
+                    "on-surface": "#1a1c1c",
+                    "on-primary-fixed": "#1b1c1c",
+                    "on-error": "#ffffff",
+                    "error": "#ba1a1a",
+                    "surface-tint": "#5f5e5e",
+                    "surface-variant": "#e2e2e2"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "gutter": "24px",
+                    "stack-xs": "8px",
+                    "margin-desktop": "64px",
+                    "container-max": "1440px",
+                    "unit": "4px",
+                    "margin-mobile": "16px",
+                    "stack-xl": "80px",
+                    "stack-md": "24px"
+            },
+            "fontFamily": {
+                    "display-xl": ["Epilogue"],
+                    "label-sm": ["Inter"],
+                    "label-md": ["Inter"],
+                    "headline-md": ["Epilogue"],
+                    "body-md": ["Inter"],
+                    "body-lg": ["Inter"],
+                    "headline-sm": ["Epilogue"],
+                    "display-lg": ["Epilogue"]
+            },
+            "fontSize": {
+                    "display-xl": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "label-sm": ["12px", {"lineHeight": "1.2", "letterSpacing": "0.08em", "fontWeight": "600"}],
+                    "label-md": ["14px", {"lineHeight": "1.4", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                    "headline-md": ["32px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "headline-sm": ["24px", {"lineHeight": "1.3", "fontWeight": "500"}],
+                    "display-lg": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.01em", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        .aspect-4-5 { aspect-ratio: 4 / 5; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md selection:bg-primary selection:text-on-primary">
+<!-- TopNavBar -->
+<header class="bg-surface dark:bg-primary border-b border-outline-variant dark:border-outline docked full-width top-0 sticky z-50 transition-all duration-300 ease-in-out">
+<div class="flex justify-between items-center w-full px-margin-desktop py-stack-xs max-w-container-max mx-auto">
+<a href="index.html" class="text-headline-md font-headline-md font-bold tracking-tighter text-primary dark:text-on-primary">
+                LUXE EDIT
+            </a>
+<nav class="hidden md:flex items-center space-x-8">
+<a class="font-body-md text-body-md font-label-md text-label-md text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-on-primary transition-colors" href="#">新品上市</a>
+<a class="font-body-md text-body-md font-label-md text-label-md text-primary dark:text-on-primary font-bold border-b-2 border-primary dark:border-on-primary pb-1" href="#">服飾系列</a>
+<a class="font-body-md text-body-md font-label-md text-label-md text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-on-primary transition-colors" href="#">配飾</a>
+<a class="font-body-md text-body-md font-label-md text-label-md text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-on-primary transition-colors" href="#">精選品牌</a>
+<a class="font-body-md text-body-md font-label-md text-label-md text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-on-primary transition-colors" href="#">關於我們</a>
+</nav>
+<div class="flex items-center space-x-6">
+<button class="hover:opacity-70 transition-opacity duration-300 flex items-center text-primary dark:text-on-primary">
+<span class="material-symbols-outlined" data-icon="search">search</span>
+</button>
+<button class="hover:opacity-70 transition-opacity duration-300 flex items-center text-primary dark:text-on-primary relative">
+<span class="material-symbols-outlined" data-icon="shopping_bag">shopping_bag</span>
+</button>
+<button class="hover:opacity-70 transition-opacity duration-300 flex items-center text-primary dark:text-on-primary">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+</button>
+</div>
+</div>
+</header>
+<main class="max-w-container-max mx-auto px-margin-desktop py-stack-xl">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<!-- Left: Image Gallery -->
+<div class="md:col-span-7 flex flex-col md:flex-row gap-4">
+<!-- Thumbnails (Vertical on Desktop) -->
+<div class="order-2 md:order-1 flex md:flex-col gap-4 overflow-x-auto md:overflow-visible hide-scrollbar shrink-0 md:w-24">
+<div class="w-20 md:w-full aspect-4-5 bg-surface-container-low cursor-pointer border border-primary">
+<img class="w-full h-full object-cover grayscale" data-alt="Close-up detailed shot of a premium black wool coat showing high-end textural fibers and precise stitching. The lighting is soft and cinematic, highlighting the deep matte finish of the luxury fabric against a neutral studio backdrop. Part of a minimalist fashion editorial aesthetic for LUXE EDIT." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAgI1tGScV39ByP19b2iWnHd3dFK4d8rt3kChnypqyRw8U8KnjIxbFGsLkcaJZDebT5e6-LiWsn1ATTsJ2ou3F7b6ichmu2inE7xkR7Ge42tYbCsuiQ8YLI-sxujIGQvq7YEmFSrQlLiGjA3jzBOSx27E7YESxXgOGu8RiHgia6-dUMl1u2abEYAS2sNcuanwaEMHllgSFJSY5bFOPjGB0gTKo1Y15o8FIRAx45AtanD1udrH9zbBMvzOexTpWBFIdPgukxq63kIFbZ"/>
+</div>
+<div class="w-20 md:w-full aspect-4-5 bg-surface-container-low cursor-pointer hover:opacity-80 transition-opacity">
+<img class="w-full h-full object-cover" data-alt="A professional fashion photography shot of a model wearing a charcoal wool coat from a side profile. The focus is on the oversized silhouette and clean drape of the garment. The setting is a minimalist architectural space with bright white natural lighting and subtle shadows." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDbxZ8xBvQPwnm3UL3K9JLzH-ExTKVMQRN_zJe_CaSeHlf1mAXqWvKNFTHRf393tCywooE72p2ruePw-ATviWb7N0IYFZ_66h5Pp5a9mLA3A-1gD-AusbyY0cNyeIRHtdxUPBH4kQp9YKUTyXyDfVjXiDfcdgX2DBZLA1YEvhY7AvD3VrqaMuQN605mbNCLPH5JJyalUeksnhnZ1cuxi0293cpz1JW77ZyvH63i22qdikAGrz5MRg-9GHidWK3p_s04hTk9IWW3iHps"/>
+</div>
+<div class="w-20 md:w-full aspect-4-5 bg-surface-container-low cursor-pointer hover:opacity-80 transition-opacity">
+<img class="w-full h-full object-cover" data-alt="Macro detail of a high-quality camel wool fabric swatch, emphasizing the luxurious soft texture and fine weave. The lighting is warm and directional, creating a sophisticated play of light and shadow that conveys a sense of quiet luxury and artisanal craftsmanship." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-_ij4YMormZqc-pGAURJJ7IyxExsjkNRfxXjnWQTUByLds69Ste40ZEDkM5lEhuZoFi5uE1-OVeaRTcOq2qc5ratwi3IigphcjO8ViXoCGuvQNcmOOLIVkzLUvkXKtf77-D76cLjNzNdiRKxr1URom61bpRSMz8L_VgTyZdNiEdChl7iMCCT1nY5Ajntiai1lMWcxc7cRVAcPvwPpXkSgMFZHQ8oJAuxJtl3_TuqppERaHhlikd-wYE7uH1tVRUiLlq-BIeuqYvJW"/>
+</div>
+</div>
+<!-- Main Image -->
+<div class="order-1 md:order-2 flex-grow aspect-4-5 bg-surface-container-low overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 hover:scale-105" data-alt="A full-length editorial photograph of a model in a minimal studio setting wearing a black oversized wool silhouette coat. The composition is clean and architectural, utilizing expansive white space to frame the garment. The lighting is sophisticated, high-fashion high-key, emphasizing the premium quality of the LUXE EDIT collection." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCmO80RP5Na84w0yoa78FrfVWJviPb44PDxo2h7USWLUI1UtT8xxlGyNXAVOrYnPnhiicRtAWt4UJiq7T4mF-ZO4PKSfu0BDNRcBHHLbsxA6m3EVmoX1HZqu2Eua8QgrkGyCeLraRbN7FmfBnBGLAbQsjJUvXJX3Nxe5TSm_CgZ1sAHU0J4H9uJ06_qY1Uu4kKJYRszJhwwKS6xRK6BrL3NfQl4jupx5kSiInd-LlznCoRer8odkw55b-Ik7auRcWuF8y7nUdcwdF4W"/>
+</div>
+</div>
+<!-- Right: Product Info -->
+<div class="md:col-span-5 flex flex-col pt-4 md:pt-0">
+<div class="mb-stack-md">
+<p class="font-label-sm text-label-sm text-on-surface-variant mb-unit tracking-widest"><a href="list.html" class="hover:text-primary">LUXE EDIT</a> / AUTUMN WINTER</p>
+<h1 class="font-headline-md text-headline-md font-bold mb-2">極簡羊毛廓形大衣</h1>
+<p class="font-body-lg text-body-lg font-medium text-primary mb-1">NT$ 5,800</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant">SKU: 2401-COAT-BK</p>
+</div>
+<!-- Selectors -->
+<div class="space-y-stack-md mb-stack-xl">
+<!-- Color -->
+<div>
+<p class="font-label-sm text-label-sm mb-stack-xs text-primary uppercase tracking-wider">顏色 / COLOR</p>
+<div class="flex gap-4">
+<button class="w-8 h-8 rounded-full bg-black border-2 border-primary outline outline-1 outline-offset-2 outline-primary"></button>
+<button class="w-8 h-8 rounded-full bg-[#363636] border border-outline-variant hover:border-primary transition-colors"></button>
+<button class="w-8 h-8 rounded-full bg-[#C19A6B] border border-outline-variant hover:border-primary transition-colors"></button>
+</div>
+</div>
+<!-- Size -->
+<div>
+<div class="flex justify-between items-center mb-stack-xs">
+<p class="font-label-sm text-label-sm text-primary uppercase tracking-wider">尺寸 / SIZE</p>
+<button class="font-label-sm text-label-sm text-on-surface-variant underline hover:text-primary transition-colors">尺寸指南</button>
+</div>
+<div class="flex gap-3">
+<button class="w-12 h-12 flex items-center justify-center border border-outline-variant text-label-md font-label-md hover:border-primary transition-colors">S</button>
+<button class="w-12 h-12 flex items-center justify-center border-2 border-primary bg-primary text-on-primary text-label-md font-label-md">M</button>
+<button class="w-12 h-12 flex items-center justify-center border border-outline-variant text-label-md font-label-md hover:border-primary transition-colors">L</button>
+<button class="w-12 h-12 flex items-center justify-center border border-outline-variant text-label-md font-label-md hover:border-primary transition-colors">XL</button>
+</div>
+</div>
+<!-- Actions -->
+<div class="flex flex-col gap-4 pt-4">
+<div class="flex items-center border border-outline-variant w-fit">
+<button class="w-10 h-10 flex items-center justify-center hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-[20px]">remove</span>
+</button>
+<span class="w-12 text-center font-label-md">1</span>
+<button class="w-10 h-10 flex items-center justify-center hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-[20px]">add</span>
+</button>
+</div>
+<button class="w-full bg-primary text-on-primary py-4 text-label-md font-label-md tracking-widest hover:opacity-90 transition-opacity">加入購物車</button>
+<button class="w-full border border-primary text-primary py-4 text-label-md font-label-md tracking-widest hover:bg-surface-container-lowest transition-colors">立即購買</button>
+</div>
+</div>
+<!-- Accordions -->
+<div class="border-t border-outline-variant">
+<div class="group border-b border-outline-variant py-4 cursor-pointer">
+<div class="flex justify-between items-center">
+<span class="font-label-md text-label-md uppercase tracking-wider">商品描述</span>
+<span class="material-symbols-outlined group-hover:rotate-180 transition-transform">expand_more</span>
+</div>
+<div class="hidden group-hover:block pt-4 text-on-surface-variant text-body-md animate-fade-in">
+                            這款極簡羊毛廓形大衣採用頂級純羊毛面料製成，展現建築感的廓形設計。無領開襟與落肩剪裁，呈現出一種隨性而充滿力度的都市美學。
+                        </div>
+</div>
+<div class="group border-b border-outline-variant py-4 cursor-pointer">
+<div class="flex justify-between items-center">
+<span class="font-label-md text-label-md uppercase tracking-wider">面料資訊</span>
+<span class="material-symbols-outlined group-hover:rotate-180 transition-transform">expand_more</span>
+</div>
+<div class="hidden group-hover:block pt-4 text-on-surface-variant text-body-md">
+                            100% 澳洲進口羊毛。
+                        </div>
+</div>
+<div class="group border-b border-outline-variant py-4 cursor-pointer">
+<div class="flex justify-between items-center">
+<span class="font-label-md text-label-md uppercase tracking-wider">洗滌建議</span>
+<span class="material-symbols-outlined group-hover:rotate-180 transition-transform">expand_more</span>
+</div>
+<div class="hidden group-hover:block pt-4 text-on-surface-variant text-body-md">
+                            僅限乾洗。存放時請使用專用防塵袋並懸掛。
+                        </div>
+</div>
+<div class="group border-b border-outline-variant py-4 cursor-pointer">
+<div class="flex justify-between items-center">
+<span class="font-label-md text-label-md uppercase tracking-wider">運送與退貨</span>
+<span class="material-symbols-outlined group-hover:rotate-180 transition-transform">expand_more</span>
+</div>
+<div class="hidden group-hover:block pt-4 text-on-surface-variant text-body-md">
+                            全館免運費。享 7 天鑑賞期無理由退換。
+                        </div>
+</div>
+</div>
+</div>
+</div>
+<!-- Recommendations -->
+<section class="mt-stack-xl">
+<div class="flex items-center justify-between mb-stack-md">
+<h2 class="font-headline-sm text-headline-sm font-bold tracking-tight">推薦搭配</h2>
+<a class="font-label-sm text-label-sm text-on-surface-variant underline hover:text-primary transition-colors" href="#">查看更多</a>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-gutter">
+<!-- Card 1 -->
+<a href="detail.html" class="group cursor-pointer">
+<div class="aspect-4-5 bg-surface-container overflow-hidden mb-stack-xs">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="High-end fashion editorial image of a model wearing a minimalist charcoal grey turtleneck sweater. The lighting is soft and directional, casting subtle shadows on the fine knit texture. The background is a clean white studio setting, following the LUXE EDIT brand aesthetic of quiet luxury and modern minimalism." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDd7euAeAvpTv-CMlMFsP3bYNczKA3LAoYpZVU3u_zLHAPyLjhQ6TBInqiSu4mhfgQzi-vMVSnrN3Y7jKAtxXv4aBlHmGhXSmcsbvTzUbgaeJ94dyMOHl8AXNh5gk79zSAPF2QDjTBa9xzBaEeHDMAZby9S1oNjTo9uR4Lui6Tdjks91iH_vHVRiOPmO1ElXQSIE3X4fjJdpuEzhEKru7DzEjM6NEnLxmkZ_NUU5mPhHTy3onqL_TKvt-pu02X910GzGJlJ9CKy8FjY"/>
+</div>
+<h3 class="font-label-md text-label-md text-primary">喀什米爾高領毛衣</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">NT$ 3,200</p>
+</a>
+<!-- Card 2 -->
+<a href="detail.html" class="group cursor-pointer">
+<div class="aspect-4-5 bg-surface-container overflow-hidden mb-stack-xs">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Editorial photograph of tailored straight-leg trousers in a deep espresso brown. The focus is on the sharp crease and premium wool-blend drape. Soft ambient lighting creates a calm, sophisticated mood within a minimalist interior space. A part of the LUXE EDIT luxury fashion collection." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCsVIRgZm5F4SUB9tXook9MPvEV-M7GNcq2L6G5AvUWj1QAYssSye0dXiwtoDFDwxmH_kwf38TFENNAMRHoaLkmI3ttB3vIma-Bv53Ib0d2c8DZF4MAYXZhIJR5uiMBzXNf9BzYDrsYV4SqjjaZf84Q8CMG5VXPfqZ4lTo8a1f2u82ZLPWinc4Yr5fyuR1tA_DFGUCBBiKNprsbEMYxhKC4fXU6YZBbqYhlEPkZsVpyqZ3fu2RmgBClZLOnDdM8A5DBnGkPGP-Ml--t"/>
+</div>
+<h3 class="font-label-md text-label-md text-primary">直筒剪裁西裝褲</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">NT$ 2,400</p>
+</a>
+<!-- Card 3 -->
+<a href="detail.html" class="group cursor-pointer">
+<div class="aspect-4-5 bg-surface-container overflow-hidden mb-stack-xs">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="A sculptural black leather handbag featured in a minimalist display. The bag has clean lines and a smooth matte finish, illuminated by a single overhead light source that emphasizes its form and quality. The aesthetic is high-fashion and intentional, consistent with the LUXE EDIT branding." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDH10WOWDaNYLGynFf1cF1moeX7PT9hbsEpyREs9hNFauRiGgm2BWjxS9EuI14QlfYktflkXQJAUyB7rTo0Kr9dQwzJKztE_bVyW8P_dYTsRCkknqW0Hm2NVVNYaxcYof87fSWwS_E-Xk0edBZpw19Ta0sUeDFGZ_LEyucq8uEWlYvRDcyjqS2mHZbe0c4iM7v-Xf62_zXle-CnBgBFmm5pgtzf8k2pUwFcjsSh7ddmpdjrdd9RU7KKIPKUUeZuEsHF1_nEOCCJ_uuf"/>
+</div>
+<h3 class="font-label-md text-label-md text-primary">幾何造型皮革手袋</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">NT$ 4,800</p>
+</a>
+<!-- Card 4 -->
+<a href="detail.html" class="group cursor-pointer">
+<div class="aspect-4-5 bg-surface-container overflow-hidden mb-stack-xs">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Minimalist design of pointed-toe leather ankle boots in soft cream. The shoes are set against a light grey tonal background with soft ambient shadows. The lighting is bright and modern, highlighting the premium craftsmanship and architectural heel design typical of the LUXE EDIT brand." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDeciAw-8Yo8pdIB6K4T8TP2OSyw7IXGf0BQUQq8A3U2MV8G3leeh09nktny3ExdIcV06hBIEmSoWtoEn9V94vhp7kkgD-S82UoohjP-AuqrxpPR_YxwQTj2OE7ScOgf0lWZSKbqo_RpYlSGdvAFDTry3fvXUccnUfK28RXRsYwpaCB0P3JifwJneEaJcm5D_yO2Mcd-jj6fkpAwg7wGVK43Tt5oI69-7XgH2-1rKisYDtaABQa0lZXJb-g_Z45_0Yl_c2tnxsDfwbe"/>
+</div>
+<h3 class="font-label-md text-label-md text-primary">尖頭細跟短靴</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">NT$ 6,200</p>
+</a>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-low dark:bg-tertiary-container full-width mt-stack-xl">
+<div class="flex flex-col md:flex-row justify-between items-start md:items-center w-full px-margin-desktop py-stack-xl max-w-container-max mx-auto">
+<div class="mb-stack-md md:mb-0">
+<div class="text-headline-sm font-headline-sm font-bold text-primary dark:text-on-primary mb-2">LUXE EDIT</div>
+<p class="font-label-sm text-label-sm text-on-surface-variant">© 2024 LUXE EDIT. 版權所有。</p>
+</div>
+<div class="flex flex-wrap gap-x-8 gap-y-4">
+<a class="font-body-md text-body-md font-label-sm text-label-sm text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-on-primary transition-colors" href="#">隱私政策</a>
+<a class="font-body-md text-body-md font-label-sm text-label-sm text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-on-primary transition-colors" href="#">服務條款</a>
+<a class="font-body-md text-body-md font-label-sm text-label-sm text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-on-primary transition-colors" href="#">配送資訊</a>
+<a class="font-body-md text-body-md font-label-sm text-label-sm text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-on-primary transition-colors" href="#">聯繫我們</a>
+<a class="font-body-md text-body-md font-label-sm text-label-sm text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-on-primary transition-colors" href="#">常見問題</a>
+</div>
+</div>
+</footer>
+</body></html>
